@@ -2,7 +2,8 @@
 <suite name="AutomationExerciseSuite">
 	<test name="Login Tests">
 		<classes>
-			<class name="tests.SearchAndFilterProducts" />
+			<class name="tests.TestCase01_RegisterUser" />
+			<class name="tests.TestCase02_LoginUser" />
 		</classes>
 	</test>
 </suite>

@@ -3,13 +3,13 @@
 <suite name="Failed suite [AutomationExerciseSuite]">
   <test thread-count="5" name="Login Tests(failed)">
     <classes>
-      <class name="tests.SearchAndFilterProducts">
+      <class name="tests.TestCase01_RegisterUser">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="testSearchAndFilterProducts"/>
+          <include name="registerNewUser"/>
         </methods>
-      </class> <!-- tests.SearchAndFilterProducts -->
+      </class> <!-- tests.TestCase01_RegisterUser -->
     </classes>
   </test> <!-- Login Tests(failed) -->
 </suite> <!-- Failed suite [AutomationExerciseSuite] -->
