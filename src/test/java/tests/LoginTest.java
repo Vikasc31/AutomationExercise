@@ -70,8 +70,8 @@ public class LoginTest {
 	@DataProvider(name = "loginData")
 	public Object[][] getLoginData() {
 
-		String path = System.getProperty("user.dir") + "/testdata/LoginData.xlsx";
-		return ExcelUtils.getSheetData(path, "Sheet1");
+		String path = System.getProperty("user.dir") + "/testdata/TestData.xlsx";
+		return ExcelUtils.getSheetData(path, "Login");
 		
 //		String path = configReader.get("excel.path");
 //		String sheet = configReader.get("excel.sheet");

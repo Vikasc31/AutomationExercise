@@ -1,8 +1,8 @@
-
+   
 <suite name="AutomationExerciseSuite">
 	<test name="Login Tests">
 		<classes>
-			<class name="tests.LoginTest" />
+			<class name="tests.SearchAndFilterProducts" />
 		</classes>
 	</test>
 </suite>
