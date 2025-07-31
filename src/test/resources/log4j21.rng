@@ -1,0 +1,46 @@
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+	datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+	<start>
+		<ref name="ConfigurationContent" />
+	</start>
+	<define name="ConfigurationContent">
+		<element name="Configuration">
+			<ref name="AppendersContent" />
+			<ref name="LoggersContent" />
+			<attribute name="status" />
+		</element>
+	</define>
+	<define name="AppendersContent">
+		<element name="Appenders">
+			<ref name="ConsoleContent" />
+		</element>
+	</define>
+	<define name="ConsoleContent">
+		<element name="Console">
+			<ref name="PatternLayoutContent" />
+			<attribute name="name" />
+			<attribute name="target" />
+		</element>
+	</define>
+	<define name="PatternLayoutContent">
+		<element name="PatternLayout">
+			<attribute name="pattern" />
+		</element>
+	</define>
+	<define name="LoggersContent">
+		<element name="Loggers">
+			<ref name="RootContent" />
+		</element>
+	</define>
+	<define name="RootContent">
+		<element name="Root">
+			<ref name="AppenderRefContent" />
+			<attribute name="level" />
+		</element>
+	</define>
+	<define name="AppenderRefContent">
+		<element name="AppenderRef">
+			<attribute name="ref" />
+		</element>
+	</define>
+</grammar>
