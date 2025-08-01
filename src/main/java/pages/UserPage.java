@@ -12,11 +12,17 @@ public class UserPage {
         PageFactory.initElements(driver, this);
     }
 
-    // ========== Common Elements ==========
+    // Common Elements
     @FindBy(xpath = "//a[contains(text(),' Signup / Login')]")
     WebElement signupLoginLink;
 
-    // ========== Signup Page Elements ==========
+    @FindBy(xpath = "//a[normalize-space()='Logout']")
+    WebElement logoutLink;
+
+    @FindBy(xpath = "//p[contains(text(),'Your email or password is incorrect!')]")
+    WebElement errorMsg;
+
+    // Signup
     @FindBy(xpath = "//input[@data-qa='signup-name']")
     WebElement nameField;
 
@@ -26,23 +32,17 @@ public class UserPage {
     @FindBy(xpath = "//button[@data-qa='signup-button']")
     WebElement signupButton;
 
-    // ========== Login Page Elements ==========
-    @FindBy(xpath = "//input[@data-qa='login-email']")
+    // Login
+    @FindBy(name = "email")
     WebElement loginEmail;
 
-    @FindBy(xpath = "//input[@data-qa='login-password']")
+    @FindBy(name = "password")
     WebElement loginPassword;
 
-    @FindBy(xpath = "//button[@data-qa='login-button']")
+    @FindBy(xpath = "//button[normalize-space()='Login']")
     WebElement loginBtn;
 
-    @FindBy(xpath = "//a[text()=' Logout']")
-    WebElement logoutLink;
-
-    @FindBy(xpath = "//p[contains(text(),'Your email or password is incorrect!')]")
-    WebElement errorMsg;
-
-    // ========== Account Info Page Elements ==========
+    // Account Info
     @FindBy(id = "id_gender1")
     WebElement mrTitle;
 
@@ -88,8 +88,7 @@ public class UserPage {
     @FindBy(xpath = "//button[contains(text(),'Create Account')]")
     WebElement createAccountBtn;
 
-    // ========== Methods ==========
-
+    // Actions
     public void clickSignupLogin() {
         signupLoginLink.click();
     }
@@ -105,7 +104,7 @@ public class UserPage {
 
     public void fillAccountDetails(String password, String day, String month, String year,
                                    String fName, String lName, String comp, String addr,
-                                   String ctry, String st, String cty, String zip, String mob) {
+                                   String ctry, String st, String ctyName, String zip, String mob) {
         mrTitle.click();
         accountPassword.sendKeys(password);
         new Select(dayDropdown).selectByVisibleText(day);
@@ -117,7 +116,7 @@ public class UserPage {
         address.sendKeys(addr);
         new Select(country).selectByVisibleText(ctry);
         state.sendKeys(st);
-        city.sendKeys(cty);
+        city.sendKeys(ctyName);
         zipCode.sendKeys(zip);
         mobile.sendKeys(mob);
     }
@@ -133,10 +132,18 @@ public class UserPage {
     }
 
     public boolean isLogoutDisplayed() {
-        return logoutLink.isDisplayed();
+        try {
+            return logoutLink.isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        }
     }
 
     public boolean isErrorDisplayed() {
-        return errorMsg.isDisplayed();
+        try {
+            return errorMsg.isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        }
     }
 }

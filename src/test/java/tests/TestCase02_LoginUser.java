@@ -1,27 +1,28 @@
 package tests;
 
 import org.testng.annotations.Test;
-import pages.LoginPageData;
+import pages.UserPage;
 import utils.BaseTest;
-import data.LoginTestData;
+import data.UserTestData;
+import validations.Validation;
 
 public class TestCase02_LoginUser extends BaseTest {
 
-    @Test(priority = 2)
-    public void loginWithValidCredentials() {
-        LoginPageData user = new LoginPageData(driver);
-        user.clickSignupLogin();
-        user.login(LoginTestData.getValidEmail(), LoginTestData.getValidPassword());
-
-        user.validateSuccessfulLogin();
-    }
-
     @Test(priority = 1)
     public void loginWithInvalidCredentials() {
-        LoginPageData user = new LoginPageData(driver);
+        UserPage user = new UserPage(driver);
         user.clickSignupLogin();
-        user.login(LoginTestData.getInvalidEmail(), LoginTestData.getInvalidPassword());
+        user.login(UserTestData.getInvalidEmail(), UserTestData.getInvalidPassword());
 
-        user.validateInvalidLogin();
+        Validation.validateInvalidLogin(user);
+    }
+
+    @Test(priority = 2)
+    public void loginWithValidCredentials() {
+        UserPage user = new UserPage(driver);
+        user.clickSignupLogin();
+        user.login(UserTestData.getValidEmail(), UserTestData.getValidPassword());
+
+        Validation.validateSuccessfulLogin(user);
     }
 }

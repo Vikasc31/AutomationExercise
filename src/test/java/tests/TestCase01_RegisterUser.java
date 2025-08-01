@@ -1,17 +1,17 @@
 package tests;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.UserPage;
 import utils.BaseTest;
 import data.UserTestData;
+import validations.Validation;
 
 public class TestCase01_RegisterUser extends BaseTest {
 
     @Test
     public void registerNewUser() {
         UserPage userPage = new UserPage(driver);
-    
+
         userPage.clickSignupLogin();
         userPage.enterSignupDetails(UserTestData.getName(), UserTestData.getEmail());
         userPage.clickSignupButton();
@@ -34,6 +34,6 @@ public class TestCase01_RegisterUser extends BaseTest {
 
         userPage.clickCreateAccount();
 
-        Assert.assertTrue(userPage.isLogoutDisplayed(), "User not logged in after account creation");
+        Validation.validateAccountCreated(userPage);
     }
 }
