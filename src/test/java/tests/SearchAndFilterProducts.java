@@ -1,29 +1,35 @@
 package tests;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.ProductsPage;
 import utils.BaseTest;
 import utils.ExcelReader;
+import validations.Validation;
+import constant.Constant;
 
 public class SearchAndFilterProducts extends BaseTest {
 
     @Test
     public void testSearchAndFilterProducts() {
-        ExcelReader reader = new ExcelReader("testdata/TestData.xlsx");
+        ExcelReader reader = new ExcelReader(Constant.FILE_PATH);
 
-        String searchTerm = reader.getCellData("Products", 1, 0); // Tshirt
-        String brand = reader.getCellData("Products", 1, 2);      // Polo
+        String searchTerm = reader.getCellData(Constant.PRODUCT_SHEET, 
+        										Constant.SEARCH_TERM_ROW, 
+        										Constant.SEARCH_TERM_COL);
+
+        String brand = reader.getCellData(Constant.PRODUCT_SHEET, 
+        									Constant.SEARCH_TERM_ROW, 
+        									Constant.BRAND_COL);
 
         ProductsPage products = new ProductsPage(driver);
 
         products.goToProducts();
         products.searchProduct(searchTerm);
 
-        Assert.assertTrue(products.isSearchedProductVisible(), "Searched product title not visible");
+        Validation.validateSearchedProductVisible(products);
 
-        products.clickBrandPolo(); 
+        products.clickBrandPolo(brand);
 
-        Assert.assertTrue(products.isProductResultDisplayed(), "Filtered products by brand not visible");
+        Validation.validateFilteredProductsByBrand(products);
     }
 }

@@ -24,6 +24,9 @@ public class ProductsPage {
 
     @FindBy(xpath = "//div[@class='features_items']")
     WebElement productResults;
+    
+    @FindBy(xpath = "//div[@class='features_items']")
+    WebElement productGrid;
 
     public ProductsPage(WebDriver driver) {
         this.driver = driver;
@@ -41,12 +44,17 @@ public class ProductsPage {
     }
 
     public boolean isSearchedProductVisible() {
-        return searchedProductsTitle.isDisplayed();
+        return searchedProductsTitle.isDisplayed() && productGrid.isDisplayed();
     }
 
-    public void clickBrandPolo() {
+    public void clickBrandPolo(String brand) {
         brandPolo.click();
     }
+    
+//    public void clickBrand(String brandName) {
+//        WebElement brandElement = driver.findElement(By.xpath("//a[contains(text(),'" + brandName + "')]"));
+//        brandElement.click();
+//    }
 
     public boolean isProductResultDisplayed() {
         return productResults.isDisplayed();

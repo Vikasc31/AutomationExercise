@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -125,6 +125,11 @@
                         <a href="#" panel-name="suite-AutomationExerciseSuite" title="tests.TestCase02_LoginUser" class="method navigator-link" hash-for-method="loginWithValidCredentials">loginWithValidCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationExerciseSuite" title="tests.SearchAndFilterProducts" class="method navigator-link" hash-for-method="testSearchAndFilterProducts">testSearchAndFilterProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-AutomationExerciseSuite -->
                   </li>
                 </ul>
@@ -154,9 +159,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4535a6d252ae27d95b14db3c1ff93c21, findElement {value=id_gender1, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63793/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4535a6d252ae27d95b14db3c1ff93c21
+Command: [fb4a1880422854b2638a2bd485584c25, findElement {value=id_gender1, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65024}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65024/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fb4a1880422854b2638a2bd485584c25
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -202,6 +207,21 @@ Session ID: 4535a6d252ae27d95b14db3c1ff93c21
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-AutomationExerciseSuite-class-passed -->
+          <div class="suite-AutomationExerciseSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.SearchAndFilterProducts</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchAndFilterProducts">
+                  </a> <!-- testSearchAndFilterProducts -->
+                  <span class="method-name">testSearchAndFilterProducts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationExerciseSuite-class-passed -->
         </div> <!-- panel AutomationExerciseSuite -->
         <div panel-name="test-xml-AutomationExerciseSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -216,6 +236,7 @@ Session ID: 4535a6d252ae27d95b14db3c1ff93c21
     &lt;classes&gt;
       &lt;class name=&quot;tests.TestCase01_RegisterUser&quot;/&gt;
       &lt;class name=&quot;tests.TestCase02_LoginUser&quot;/&gt;
+      &lt;class name=&quot;tests.SearchAndFilterProducts&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Login Tests --&gt;
 &lt;/suite&gt; &lt;!-- AutomationExerciseSuite --&gt;
@@ -229,7 +250,7 @@ Session ID: 4535a6d252ae27d95b14db3c1ff93c21
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Login Tests (2 classes)</span>
+                <span class="test-name">Login Tests (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -255,24 +276,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'registerNewUser')
-data.setCell(0, 2, 'tests.TestCase01_RegisterUser')
-data.setCell(0, 3, 6510);
+data.setCell(0, 1, 'testSearchAndFilterProducts')
+data.setCell(0, 2, 'tests.SearchAndFilterProducts')
+data.setCell(0, 3, 14299);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginWithValidCredentials')
-data.setCell(1, 2, 'tests.TestCase02_LoginUser')
-data.setCell(1, 3, 4114);
+data.setCell(1, 1, 'registerNewUser')
+data.setCell(1, 2, 'tests.TestCase01_RegisterUser')
+data.setCell(1, 3, 5633);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginWithInvalidCredentials')
+data.setCell(2, 1, 'loginWithValidCredentials')
 data.setCell(2, 2, 'tests.TestCase02_LoginUser')
-data.setCell(2, 3, 2558);
+data.setCell(2, 3, 5099);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginWithInvalidCredentials')
+data.setCell(3, 2, 'tests.TestCase02_LoginUser')
+data.setCell(3, 3, 2541);
 window.suiteTableData['AutomationExerciseSuite']= { tableData: data, tableDiv: 'times-div-AutomationExerciseSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-AutomationExerciseSuite">
               </div> <!-- times-div-AutomationExerciseSuite -->
             </div> <!-- times-div -->
@@ -307,30 +332,45 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">registerNewUser</span>
-                <span class="method-start">8331 ms</span>
+                <span class="method-start">7518 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14866 ms</span>
+                <span class="method-start">13165 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TestCase02_LoginUser</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">16813 ms</span>
+                <span class="method-start">13530 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginWithInvalidCredentials</span>
-                <span class="method-start">23086 ms</span>
+                <span class="method-start">18387 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginWithValidCredentials</span>
-                <span class="method-start">25652 ms</span>
+                <span class="method-start">20930 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">29771 ms</span>
+                <span class="method-start">26029 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SearchAndFilterProducts</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">26249 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testSearchAndFilterProducts</span>
+                <span class="method-start">30031 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">44333 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

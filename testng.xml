@@ -4,6 +4,8 @@
 		<classes>
 			<class name="tests.TestCase01_RegisterUser" />
 			<class name="tests.TestCase02_LoginUser" />
+			<class name="tests.SearchAndFilterProducts" />
+
 		</classes>
 	</test>
 </suite>

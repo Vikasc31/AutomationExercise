@@ -1,35 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-01T12:52:43 IST" name="AutomationExerciseSuite" finished-at="2025-08-01T12:53:13 IST" duration-ms="30040">
+  <suite started-at="2025-08-01T13:25:26 IST" name="AutomationExerciseSuite" finished-at="2025-08-01T13:26:11 IST" duration-ms="44633">
     <groups>
     </groups>
-    <test started-at="2025-08-01T12:52:43 IST" name="Login Tests" finished-at="2025-08-01T12:53:13 IST" duration-ms="30040">
+    <test started-at="2025-08-01T13:25:26 IST" name="Login Tests" finished-at="2025-08-01T13:26:11 IST" duration-ms="44633">
       <class name="tests.TestCase02_LoginUser">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TestCase02_LoginUser@77c2494c]" started-at="2025-08-01T12:53:00 IST" name="setup" finished-at="2025-08-01T12:53:06 IST" duration-ms="6273" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TestCase02_LoginUser@233795b6]" started-at="2025-08-01T13:25:40 IST" name="setup" finished-at="2025-08-01T13:25:45 IST" duration-ms="4852" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginWithInvalidCredentials()[pri:1, instance:tests.TestCase02_LoginUser@77c2494c]" started-at="2025-08-01T12:53:06 IST" name="loginWithInvalidCredentials" finished-at="2025-08-01T12:53:09 IST" duration-ms="2558" status="PASS">
+        <test-method signature="loginWithInvalidCredentials()[pri:1, instance:tests.TestCase02_LoginUser@233795b6]" started-at="2025-08-01T13:25:45 IST" name="loginWithInvalidCredentials" finished-at="2025-08-01T13:25:47 IST" duration-ms="2541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInvalidCredentials -->
-        <test-method signature="loginWithValidCredentials()[pri:2, instance:tests.TestCase02_LoginUser@77c2494c]" started-at="2025-08-01T12:53:09 IST" name="loginWithValidCredentials" finished-at="2025-08-01T12:53:13 IST" duration-ms="4114" status="PASS">
+        <test-method signature="loginWithValidCredentials()[pri:2, instance:tests.TestCase02_LoginUser@233795b6]" started-at="2025-08-01T13:25:47 IST" name="loginWithValidCredentials" finished-at="2025-08-01T13:25:52 IST" duration-ms="5099" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TestCase02_LoginUser@77c2494c]" started-at="2025-08-01T12:53:13 IST" name="tearDown" finished-at="2025-08-01T12:53:13 IST" duration-ms="234" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TestCase02_LoginUser@233795b6]" started-at="2025-08-01T13:25:52 IST" name="tearDown" finished-at="2025-08-01T13:25:53 IST" duration-ms="220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.TestCase02_LoginUser -->
-      <class name="tests.TestCase01_RegisterUser">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TestCase01_RegisterUser@229f66ed]" started-at="2025-08-01T12:52:43 IST" name="setup" finished-at="2025-08-01T12:52:51 IST" duration-ms="8309" status="PASS">
+      <class name="tests.SearchAndFilterProducts">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SearchAndFilterProducts@3eb738bb]" started-at="2025-08-01T13:25:53 IST" name="setup" finished-at="2025-08-01T13:25:56 IST" duration-ms="3780" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="registerNewUser()[pri:0, instance:tests.TestCase01_RegisterUser@229f66ed]" started-at="2025-08-01T12:52:51 IST" name="registerNewUser" finished-at="2025-08-01T12:52:58 IST" duration-ms="6510" status="FAIL">
+        <test-method signature="testSearchAndFilterProducts()[pri:0, instance:tests.SearchAndFilterProducts@3eb738bb]" started-at="2025-08-01T13:25:56 IST" name="testSearchAndFilterProducts" finished-at="2025-08-01T13:26:11 IST" duration-ms="14299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchAndFilterProducts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SearchAndFilterProducts@3eb738bb]" started-at="2025-08-01T13:26:11 IST" name="tearDown" finished-at="2025-08-01T13:26:11 IST" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.SearchAndFilterProducts -->
+      <class name="tests.TestCase01_RegisterUser">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TestCase01_RegisterUser@662ac478]" started-at="2025-08-01T13:25:26 IST" name="setup" finished-at="2025-08-01T13:25:34 IST" duration-ms="7495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerNewUser()[pri:0, instance:tests.TestCase01_RegisterUser@662ac478]" started-at="2025-08-01T13:25:34 IST" name="registerNewUser" finished-at="2025-08-01T13:25:39 IST" duration-ms="5633" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#id_gender1"}
@@ -38,9 +52,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.34.0', revision: '707dcb4246*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4535a6d252ae27d95b14db3c1ff93c21, findElement {value=id_gender1, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63793/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4535a6d252ae27d95b14db3c1ff93c21]]>
+Command: [fb4a1880422854b2638a2bd485584c25, findElement {value=id_gender1, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65024}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65024/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fb4a1880422854b2638a2bd485584c25]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#id_gender1"}
@@ -49,9 +63,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.34.0', revision: '707dcb4246*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4535a6d252ae27d95b14db3c1ff93c21, findElement {value=id_gender1, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63793/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4535a6d252ae27d95b14db3c1ff93c21
+Command: [fb4a1880422854b2638a2bd485584c25, findElement {value=id_gender1, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65024}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65024/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fb4a1880422854b2638a2bd485584c25
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -103,7 +117,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerNewUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TestCase01_RegisterUser@229f66ed]" started-at="2025-08-01T12:52:58 IST" name="tearDown" finished-at="2025-08-01T12:53:00 IST" duration-ms="1932" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TestCase01_RegisterUser@662ac478]" started-at="2025-08-01T13:25:39 IST" name="tearDown" finished-at="2025-08-01T13:25:40 IST" duration-ms="361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
